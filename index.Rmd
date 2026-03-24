@@ -1,5 +1,5 @@
 ---
-title: "Nome_Aluno(a)"
+title: "Luiz Gustavo"
 image: "logo.png"
 links:
   - label: GitHub
