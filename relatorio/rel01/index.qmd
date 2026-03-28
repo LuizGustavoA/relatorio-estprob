@@ -148,8 +148,13 @@ Depois de inserido as informaçõe no arquivo **referencias.bib**, use:
 ### 📊  Análise de Dados
 
 ```{r}
-distancia <- c(10.2, 9.8, 10.5, 10.1, 9.9, 10.3)
-distancia
+library(leem)
+dados <- read.csv2("ap01.csv", skip = 1)
+dist<- as.numeric(dados[[2]])
+dist|>
+  new_leem(variable = 2)|>
+  tabfreq()
+
 ```
 
 ## 🧠 Considerações finais
