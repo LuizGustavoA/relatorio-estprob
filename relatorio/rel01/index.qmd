@@ -1,6 +1,6 @@
 ---
 # Só mude aqui!!!!
-author: "Nome do Aluno"
+author: "Luiz Gustavo Alves Carvalho"
 title: "Relatório de Aula Prática 01"
 bibliography: referencias.bib
 # A partir daqui nao faca alteracoes!!!!!
@@ -37,8 +37,7 @@ Descreva o contexto da prática e sua importância.
 ## 🎯 Objetivos
 
 ### Objetivo geral
-
-Descrever o objetivo principal da prática.
+O experimento teve como objetivo aplicar variações no lançamento de projéteis de uma catapulta e coletar dados para utilizar técnicas de estatística e organizá-los em tabelas.
 
 ### Objetivos específicos
 
@@ -54,25 +53,44 @@ Descrever o objetivo principal da prática.
 Apresente os conceitos principais:
 
 - Média
-- Variância
-- Desvio padrão
-- Amostragem
-
 $$
 \bar{x} = \frac{1}{n}\sum_{i=1}^{n} x_i
 $$
-
+- Variância
+$$
+s^2 = \frac{1}{n-1}\sum_{i=1}^{n}(x_i - \bar{x})^2
+$$
+- Desvio padrão
+$$
+s = \sqrt{\frac{1}{n-1}\sum_{i=1}^{n}(x_i - \bar{x})^2}
+$$
+- Amostragem
+$$
+X = \{x_1, x_2, x_3, ..., x_n\}
+$$
+- Média aritmética
+$$
+\bar{x} = \frac{1}{n}\sum_{i=1}^{n} x_i
+$$
+- Mediana
+$$
+\text{Mediana} = 
+\begin{cases}
+x_{\frac{n+1}{2}}, & \text{se } n \text{ ímpar} \\
+\frac{x_{\frac{n}{2}} + x_{\frac{n}{2}+1}}{2}, & \text{se } n \text{ par}
+\end{cases}
+$$
+- moda
+$$
+\text{Moda} = x_k \; \text{tal que} \; f(x_k) = \max(f(x_i))
+$$
 ---
 
 ## ⚙️ Metodologia
 
-::: {.callout-note}
-Descreva como o experimento foi realizado.
-:::
 
-- Materiais utilizados  
-- Procedimento  
-- Número de repetições  
+ Para a coleta dos dados, utilizamos como superfície de apoio da catapulta uma mesa escolar, considerando possíveis desníveis. A catapulta estava firme na mesa, presa com grampos bem fixados. Foram realizadas 22 repetições, com medições em centímetros, considerando também os milímetros.
+
 
 ---
 
