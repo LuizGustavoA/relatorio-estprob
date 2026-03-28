@@ -1,5 +1,5 @@
 ---
-title: "Luiz Gustavo"
+title: "LuizGustavo"
 image: "logo.png"
 links:
   - label: GitHub
