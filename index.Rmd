@@ -1,6 +1,6 @@
 ---
-title: "LuizGustavo"
-image: "logo.png"
+title: "Luiz Gustavo"
+image: "foto1.jpeg"
 links:
   - label: GitHub
     url: "https://github.com/"
