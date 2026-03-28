@@ -28,9 +28,7 @@ execute:
 
 ## 📌 Introdução
 
-Descreva o contexto da prática e sua importância.
-
-> Exemplo: análise da variabilidade em experimentos físicos utilizando uma catapulta.
+A prática de lançamento de uma catapulta foi realizada como atividade experimental para a coleta de dados referentes a 22 lançamentos, com o objetivo de aplicar conceitos estatísticos, incluindo média, variância, desvio padrão, mediana e moda. Adicionalmente, buscou-se desenvolver habilidades de programação na linguagem R. Para isso, utilizou-se a biblioteca leem para a leitura e organização dos dados, bem como para a geração de gráficos, em conjunto com o LaTeX para a elaboração e formatação das expressões matemáticas.
 
 
 
@@ -57,11 +55,9 @@ $$
 \text{média}= \bar{x} = \frac{1}{n}\sum_{i=1}^{n} x_i
 $$
 
-Soma de cada dado = 6351,3 
-
-Número total de dados=22
-
-Resultado=6351,3÷22 ≈ 288,69 
+Soma de cada dado = 6351,3    
+Número total de dados=22   
+Resultado=6351,3÷22 ≈ 288,69    
 
 - Variância Amostral
 $$
@@ -128,12 +124,11 @@ Procure não apenas descrever, mas **interpretar os dados**.
 
 Depois de inserido as informaçõe no arquivo **referencias.bib**, use:
 
-
+- Foi utilizada a biblioteca leem no R para criação dos gráficos @leem
+- Para a elaboração das fórmulas matemáticas, foi utilizada uma playlist do youtube @latex
 - A análise estatística foi baseada em @estatistica2024
+- O desenvolvimento deste projeto foi baseado no livro @Rbasico2022
 
-- Segundo @Rbasico2022
-
-- Tudo é um objeto em R [@Rbasico2022]
 
 ### 📊  Análise de Dados
 
