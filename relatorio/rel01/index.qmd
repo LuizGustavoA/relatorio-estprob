@@ -128,7 +128,11 @@ Procure não apenas descrever, mas **interpretar os dados**.
 
 Depois de inserido as informaçõe no arquivo **referencias.bib**, use:
 
+
+- A análise estatística foi baseada em @estatistica2024
+
 - Segundo @Rbasico2022
+
 - Tudo é um objeto em R [@Rbasico2022]
 
 ### 📊  Análise de Dados
