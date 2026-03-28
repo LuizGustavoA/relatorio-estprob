@@ -54,7 +54,6 @@ Apresente os conceitos principais:
 $$
 \text{média}= \bar{x} = \frac{1}{n}\sum_{i=1}^{n} x_i
 $$
-
 Soma de cada dado = 6351,3    
 Número total de dados=22   
 Resultado=6351,3÷22 ≈ 288,69    
@@ -63,7 +62,6 @@ Resultado=6351,3÷22 ≈ 288,69
 $$
 \text{Variância Amostral}=s^2 = \frac{1}{n-1}\sum_{i=1}^{n}(x_i - \bar{x})^2
 $$
-
 Subtrai-se a média de cada valor e eleva-se o resultado ao quadrado; em seguida, somam-se todos os termos, obtendo-se aproximadamente 1269,87. Dividindo esse valor por 𝑛−1, temos: variância = 1269,87 ÷ 21 ≈ 60,47.
 
 
@@ -71,7 +69,6 @@ Subtrai-se a média de cada valor e eleva-se o resultado ao quadrado; em seguida
 $$
 \text{Desvio padrão}= s = \sqrt{\frac{1}{n-1}\sum_{i=1}^{n}(x_i - \bar{x})^2}
 $$
-
 Para calcular o desvio padrão, tira-se a raiz quadrada da variância amostral: s = √60,47 ≈ 7,77
 
 - Mediana
@@ -82,15 +79,33 @@ x_{\frac{n+1}{2}}, & \text{se } n \text{ ímpar} \\
 \frac{x_{\frac{n}{2}} + x_{\frac{n}{2}+1}}{2}, & \text{se } n \text{ par}
 \end{cases}
 $$
-
 Primeiro, ordenam-se os dados em ordem crescente. Como n=22, selecionam-se o 11º e o 12º valores, somam-se ambos e divide-se o resultado por 2: Mediana = (285,3 + 287,1) ÷ 2 = 286,2.
 
 - moda
 $$
 \text{Moda} = x_k \; \text{tal que} \; f(x_k) = \max(f(x_i))
 $$
-
 São os valores que mais se repetem no conjunto de dados: Moda = 277,1 e 285,3.
+
+- Amplitude
+$$
+A = x_{\max} - x_{\min}
+$$
+Utilizando o desvio padrão dividido pela raiz do número de dados, obtém-se o erro padrão da média (EPM), aproximadamente igual a 2,29.
+
+- Coeficiente de Variação
+$$
+CV = \frac{s}{\bar{x}} \times 100\%
+$$
+Utilizando o desvio padrão dividido pela média e, em seguida, multiplicando o resultado por 100, obtém-se o coeficiente de variação (CV), aproximadamente igual a 3,69%.
+
+- Erro padrão da Média
+$$
+EPM = \frac{s}{\sqrt{n}}
+$$
+Utilizando o desvio padrão dividido pela raiz do número de dados, obtém-se o erro padrão da média (EPM), aproximadamente igual a 2,29.
+
+
 
 ---
 
