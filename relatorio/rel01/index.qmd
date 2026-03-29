@@ -48,7 +48,7 @@ O experimento teve como objetivo aplicar variações no lançamento de projétei
 
 ## 📚  Fundamentação Teórica
 
-Apresente os conceitos principais:
+Conceitos principais de estatística:
 
 - Média Aritmética
 $$
@@ -105,6 +105,35 @@ EPM = \frac{s}{\sqrt{n}}
 $$
 Utilizando o desvio padrão dividido pela raiz do número de dados, obtém-se o erro padrão da média (EPM), aproximadamente igual a 2,29.
 
+Conceitos principais Elasticidade:
+
+- Lei de Hooke
+$$
+F = kx
+$$
+Permite calcular a força aplicada ao projétil no momento do lançamento. Quanto maior a força, maior será a aceleração e, consequentemente, o alcance.
+
+- Degradação da constante elástica
+$$
+k(n) = k_0 \cdot e^{-\alpha n}
+$$
+Explica por que os lançamentos ficam mais fracos ao longo do tempo, mesmo usando a mesma deformação. É essencial para entender erros e variações nos resultados.
+
+- Energia potencial elástica
+$$
+E = \frac{1}{2} k x^2
+$$
+Essa energia é convertida em movimento do projétil. Quanto maior a energia, maior tende a ser a velocidade inicial e o alcance da catapulta.
+
+Conceitos Principais Termodinamica:
+
+- Relação temperatura e constante elástica
+$$
+k(T) = k_0 \cdot (1 - \beta \Delta T)
+$$
+elástico é um material sensível ao calor,por isso é melhor levar em consideração que a constante elástica varia com a temperatura.
+Temperaturas mais altas → elástico mais “mole” → menor k → menor força → menor alcance
+Temperaturas mais baixas → elástico mais rígido → maior k → maior força (até certo limite)
 
 
 ---
@@ -112,21 +141,19 @@ Utilizando o desvio padrão dividido pela raiz do número de dados, obtém-se o 
 ## ⚙️ Metodologia
 
 
- Para a coleta dos dados, utilizamos como superfície de apoio da catapulta uma mesa escolar, considerando possíveis desníveis. A catapulta estava firme na mesa, presa com grampos bem fixados. Foram realizadas 22 repetições, com medições em centímetros, considerando também os milímetros.
+ Para a coleta dos dados, utilizamos como superfície de apoio da catapulta uma mesa escolar, considerando possíveis desníveis. A catapulta estava firme na mesa, presa com grampos bem fixados. Foram realizadas 22 repetições, com medições em centímetros, com aproximação até os milímetros.
 
 
 ---
 
 ## 🔍 Resultados e Discussão
 
-A análise dos dados mostra que a média e a mediana apresentam valores bastante próximos, o que indica que os resultados estão relativamente equilibrados e não sofrem influência significativa de valores extremos. Além disso, a presença de duas modas sugere que determinados valores se repetiram com maior frequência, possivelmente devido à repetição de condições semelhantes durante os lançamentos da catapulta.
-O desvio padrão relativamente baixo em comparação com a média indica que os dados estão pouco dispersos, evidenciando que os lançamentos foram consistentes ao longo das repetições. Apesar disso, é possível observar a presença de valores discrepantes, como no lançamento 17, que apresentou 276,4 cm, e no primeiro lançamento, com 326,0 cm, indicando variações pontuais fora do comportamento mais comum dos dados.
-Em experimentos de lançamento de projéteis, é esperado que haja certo grau de variação, devido a fatores mecânicos e ambientais. Ainda assim, os resultados obtidos demonstram boa repetibilidade, já que a maioria dos valores se concentra em torno da média. De fato, não há grande variabilidade no conjunto de dados, como evidenciado pelo desvio padrão de 7,77 cm e pelo coeficiente de variação de 3,69%, que indicam baixa dispersão.
-As pequenas variações observadas podem ser explicadas por fatores como diferenças na tensão aplicada na catapulta, atrito ou desgaste do mecanismo, leves alterações na posição do projétil e até irregularidades na superfície de apoio, como uma mesa levemente desnivelada. Além disso, algumas fontes de erro experimental podem ter influenciado os resultados, incluindo erros de medição com régua ou fita métrica, paralaxe na leitura das distâncias, variações na forma de acionar a catapulta, possível instabilidade do equipamento mesmo estando fixado e arredondamentos realizados durante os cálculos estatísticos.
+A análise dos dados mostra que a média(≈ 288,69) e a mediana(= 286,2) apresentam valores bastante próximos, o que indica que os resultados estão relativamente equilibrados e não sofrem influência significativa de valores extremos. Além disso, a presença de duas modas(277,1 e 285,3) sugere que determinados valores se repetiram com maior frequência, possivelmente devido à repetição de condições semelhantes durante os lançamentos da catapulta.
+O desvio padrão(≈ 7,77) relativamente baixo em comparação com a média(≈ 288,69) indica que os dados estão pouco dispersos, evidenciando que os lançamentos foram consistentes ao longo das repetições. Apesar disso, é possível observar a presença de valores discrepantes, como no lançamento 17, que apresentou 276,4 cm, e no primeiro lançamento, com 326,0 cm, indicando variações fora do comportamento comum dos dados.
+Em experimentos de lançamento de projéteis, é esperado que haja certo grau de variação, devido a fatores mecânicos e ambientais. Ainda assim, os resultados obtidos demonstram boa repetibilidade, já que a maioria dos valores se concentra em torno da média(≈ 288,69). De fato, não há grande variabilidade no conjunto de dados, como evidenciado pelo desvio padrão(≈ 7,77) e pelo coeficiente de variação(≈3,69%), que indicam baixa dispersão.
+As pequenas variações observadas podem ser explicadas por fatores como diferenças na tensão aplicada na catapulta, atrito ou desgaste do mecanismo, leves alterações na posição do projétil e até irregularidades na superfície de apoio, como uma mesa levemente desnivelada. Além disso, algumas fontes de erro experimental podem ter influenciado os resultados, incluindo erros de medição com régua ou fita métrica, aproximações na leitura das distâncias, variações na forma de acionar a catapulta, possível instabilidade do equipamento mesmo estando fixado, conceitos da força elastica e temperatura tiveram influência nos dados.
 
-### 💬 Exemplo de como citar uma referência bibliográfica
-
-Depois de inserido as informaçõe no arquivo **referencias.bib**, use:
+### 💬 Referência bibliográfica
 
 - Foi utilizada a biblioteca leem no R para criação dos gráficos @leem
 - Para a elaboração das fórmulas matemáticas, foi utilizada uma playlist do youtube @latex
@@ -160,6 +187,8 @@ O experimento teve como objetivo aplicar variações no lançamento de projétei
 Ao longo da prática, foi possível compreender melhor a aplicação de conceitos como média, desvio padrão, variância e coeficiente de variação em uma situação real. Além disso, o experimento contribuiu para o entendimento de como pequenas variações em condições iniciais podem impactar os resultados, reforçando a importância do controle experimental e da repetição de medidas para garantir maior confiabilidade.
 A qualidade dos dados coletados pode ser considerada boa, já que houve baixa variabilidade e uma distribuição relativamente uniforme dos valores, indicando consistência nos lançamentos. Mesmo com a presença de alguns valores discrepantes, o conjunto geral se manteve estável, permitindo análises confiáveis e coerentes com o esperado para esse tipo de experimento.
 Como possíveis melhorias, seria interessante utilizar instrumentos de medição mais precisos, garantir um controle ainda maior das condições de lançamento (como ângulo e força aplicada) e utilizar uma superfície perfeitamente nivelada. Além disso, a automatização do disparo da catapulta poderia reduzir interferências humanas, aumentando a precisão e a repetibilidade dos resultados.
+
+
 ## Aprenda Quarto
 
 Acesse [Quarto](https://quarto.org/).
