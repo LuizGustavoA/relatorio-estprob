@@ -119,21 +119,10 @@ Utilizando o desvio padrão dividido pela raiz do número de dados, obtém-se o 
 
 ## 🔍 Resultados e Discussão
 
-Apresente e interprete os resultados obtidos a partir dos dados coletados.
-
-- Descreva os principais resultados numéricos (média, variabilidade, etc.).
-- Comente o comportamento dos dados observados nos gráficos.
-- Indique se há presença de valores discrepantes (outliers).
-- Avalie se os dados apresentam simetria ou tendência.
-
-Em seguida, discuta os resultados à luz dos conceitos teóricos:
-
-- Os resultados estão de acordo com o esperado?
-- Há grande variabilidade? O que isso significa no contexto do experimento?
-- Quais fatores podem ter influenciado os resultados?
-- Existem possíveis fontes de erro experimental?
-
-Procure não apenas descrever, mas **interpretar os dados**.
+A análise dos dados mostra que a média e a mediana apresentam valores bastante próximos, o que indica que os resultados estão relativamente equilibrados e não sofrem influência significativa de valores extremos. Além disso, a presença de duas modas sugere que determinados valores se repetiram com maior frequência, possivelmente devido à repetição de condições semelhantes durante os lançamentos da catapulta.
+O desvio padrão relativamente baixo em comparação com a média indica que os dados estão pouco dispersos, evidenciando que os lançamentos foram consistentes ao longo das repetições. Apesar disso, é possível observar a presença de valores discrepantes, como no lançamento 17, que apresentou 276,4 cm, e no primeiro lançamento, com 326,0 cm, indicando variações pontuais fora do comportamento mais comum dos dados.
+Em experimentos de lançamento de projéteis, é esperado que haja certo grau de variação, devido a fatores mecânicos e ambientais. Ainda assim, os resultados obtidos demonstram boa repetibilidade, já que a maioria dos valores se concentra em torno da média. De fato, não há grande variabilidade no conjunto de dados, como evidenciado pelo desvio padrão de 7,77 cm e pelo coeficiente de variação de 3,69%, que indicam baixa dispersão.
+As pequenas variações observadas podem ser explicadas por fatores como diferenças na tensão aplicada na catapulta, atrito ou desgaste do mecanismo, leves alterações na posição do projétil e até irregularidades na superfície de apoio, como uma mesa levemente desnivelada. Além disso, algumas fontes de erro experimental podem ter influenciado os resultados, incluindo erros de medição com régua ou fita métrica, paralaxe na leitura das distâncias, variações na forma de acionar a catapulta, possível instabilidade do equipamento mesmo estando fixado e arredondamentos realizados durante os cálculos estatísticos.
 
 ### 💬 Exemplo de como citar uma referência bibliográfica
 
@@ -154,7 +143,15 @@ dist<- as.numeric(dados[[2]])
 dist|>
   new_leem(variable = 2)|>
   tabfreq()
-
+dados1<- read.csv2("ap01.csv", skip = 1)
+dist1<- c(dados1[[2]])
+dist1 |>
+  new_leem(variable = 2) |>
+  tabfreq() |>
+  hist()|>
+  insert(type = "all", 
+    lcol = c("black", "blue", "brown"),
+    ptext = 0.08, larrow = 0.4) 
 ```
 
 ## 🧠 Considerações finais
