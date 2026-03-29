@@ -156,15 +156,10 @@ dist1 |>
 
 ## 🧠 Considerações finais
 
-Apresente uma síntese dos principais pontos observados no experimento.
-
-- Retome o objetivo da prática e indique se ele foi alcançado.
-- Destaque os principais aprendizados obtidos.
-- Comente brevemente sobre a qualidade dos dados coletados.
-- Sugira possíveis melhorias no procedimento experimental.
-
-Evite repetir apenas os resultados; foque nas **conclusões e reflexões** sobre a prática realizada.
-
+O experimento teve como objetivo aplicar variações no lançamento de projéteis utilizando uma catapulta, coletar dados e analisá-los por meio de técnicas de estatística descritiva, além de organizá-los e interpretá-los com auxílio de gráficos. Esse objetivo foi alcançado com sucesso, uma vez que foi possível obter um conjunto de dados consistente, calcular medidas estatísticas importantes e extrair interpretações relevantes sobre o comportamento dos lançamentos.
+Ao longo da prática, foi possível compreender melhor a aplicação de conceitos como média, desvio padrão, variância e coeficiente de variação em uma situação real. Além disso, o experimento contribuiu para o entendimento de como pequenas variações em condições iniciais podem impactar os resultados, reforçando a importância do controle experimental e da repetição de medidas para garantir maior confiabilidade.
+A qualidade dos dados coletados pode ser considerada boa, já que houve baixa variabilidade e uma distribuição relativamente uniforme dos valores, indicando consistência nos lançamentos. Mesmo com a presença de alguns valores discrepantes, o conjunto geral se manteve estável, permitindo análises confiáveis e coerentes com o esperado para esse tipo de experimento.
+Como possíveis melhorias, seria interessante utilizar instrumentos de medição mais precisos, garantir um controle ainda maior das condições de lançamento (como ângulo e força aplicada) e utilizar uma superfície perfeitamente nivelada. Além disso, a automatização do disparo da catapulta poderia reduzir interferências humanas, aumentando a precisão e a repetibilidade dos resultados.
 ## Aprenda Quarto
 
 Acesse [Quarto](https://quarto.org/).
