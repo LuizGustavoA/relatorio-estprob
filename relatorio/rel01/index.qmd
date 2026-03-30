@@ -141,7 +141,7 @@ Temperaturas mais baixas → elástico mais rígido → maior k → maior força
 ## ⚙️ Metodologia
 
 
- Para a coleta dos dados, utilizamos como superfície de apoio da catapulta uma mesa escolar, considerando possíveis desníveis e utilizando O- =Nível 2 , A+= Nível 3, B+= 90°, A-= Nível 4, como diferentes tipos de variaveis . A catapulta estava firme na mesa, presa com grampos bem fixados. Foram realizadas 22 repetições, com medições em centímetros, com aproximação até os milímetros.
+ Para a coleta dos dados, utilizamos como superfície de apoio da catapulta uma mesa escolar, considerando possíveis desníveis e utilizando O- =Nível 2 , A+= Nível 3, B+= 90°, A-= Nível 4, como de variaveis constantes da configuração da catapulta . A catapulta estava firme na mesa, presa com grampos bem fixados. Foram realizadas 22 repetições, com medições em centímetros, com aproximação até os milímetros.
 
  O Nível O-:
 Ponto de referência: é o apoio superior da catapulta, altera a trajetória do projétil.
@@ -204,7 +204,7 @@ dist1 |>
 
  Os dados obtidos apresentaram boa qualidade, com baixa variabilidade e distribuição relativamente uniforme, indicando consistência nos lançamentos. Mesmo com a presença de alguns valores atípicos, o conjunto se manteve estável, permitindo análises coerentes e confiáveis, dentro do esperado para esse tipo de experimento.
 
- Como melhorias, seria interessante utilizar instrumentos de medição mais precisos, aprimorar o controle das condições de lançamento (como ângulo e força aplicada) e garantir uma superfície totalmente nivelada. Além disso, automatizar o disparo da catapulta poderia reduzir interferências humanas, aumentando a precisão e a repetibilidade dos resultados.
+ Como melhorias, seria interessante utilizar instrumentos de medição mais precisos, aprimorar o controle das condições de lançamento (como força aplicada) e garantir uma superfície totalmente nivelada. Além disso, automatizar o disparo da catapulta poderia reduzir interferências humanas, aumentando a precisão e a repetibilidade dos resultados.
 
 
 ## Aprenda Quarto
