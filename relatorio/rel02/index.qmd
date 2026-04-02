@@ -1,6 +1,6 @@
 ---
 # Só mude aqui!!!!
-author: "Nome do Aluno"
+author: "Luiz Gustavo"
 title: "Relatório de Aula Prática 02"
 bibliography: referencias.bib
 # A partir daqui nao faca alteracoes!!!!!
@@ -28,96 +28,203 @@ execute:
 
 ## 📌 Introdução
 
-Descreva o contexto da prática e sua importância.
-
-> Exemplo: análise da variabilidade em experimentos físicos utilizando uma catapulta.
-
+ Este relatório tem como objetivo apresentar os conceitos básicos do R, incluindo sua estrutura, principais funcionalidades e aplicações práticas. Além disso, serão abordados exemplos introdutórios que demonstram como utilizar a linguagem para resolver problemas simples de análise de dados, proporcionando uma base sólida para estudos mais avançados.
 
 
 ## 🎯 Objetivos
 
 ### Objetivo geral
 
-Descrever o objetivo principal da prática.
+Entender a historia de como surgiu a ideia da linguagem R, as utilidades práticas, a fundamentação dessa linguagem e seus principios que o diferem de outras.
 
 ### Objetivos específicos
 
-- Coletar dados experimentais  
-- Aplicar estatística descritiva  
-- Construir gráficos  
-- Interpretar resultados  
+- historia do R
+- Entender seus 3 principios  
+- Como aplicar a linguagem R
+- utilização da biblioteca Leem na analise estatistica
 
+ 
 ---
 
 ## 📚  Fundamentação Teórica
 
-Apresente os conceitos principais:
+- Algoritmos usados como exemplos no livro Epaec
+- historia baseada no livro R básico
+- algumas informações da apresentação do principio:Tudo é objeto em R, baseadas nas videos aulas da playlist R básico
 
-- Média
-- Variância
-- Desvio padrão
-- Amostragem
-
-$$
-\bar{x} = \frac{1}{n}\sum_{i=1}^{n} x_i
-$$
 
 ---
 
 ## ⚙️ Metodologia
 
-::: {.callout-note}
-Descreva como o experimento foi realizado.
-:::
-
-- Materiais utilizados  
-- Procedimento  
-- Número de repetições  
-
+ Para estudo foi utilizado aulas presencias do professor de estatistica e probabilidade,Ben Dêivide, ministradas para o curso de engenharia mecâtronica na universidade federal de sao joao del rei(ufsj), o livro R básico(colocar referencia), e videos aulas de numero 00 até 08 da playlist R básico 2024(colocar referencia).
+ 
+ 
 ---
 
 ## 🔍 Resultados e Discussão
 
-Apresente e interprete os resultados obtidos a partir dos dados coletados.
+- Introdução ao Ecossistema R:
 
-- Descreva os principais resultados numéricos (média, variabilidade, etc.).
-- Comente o comportamento dos dados observados nos gráficos.
-- Indique se há presença de valores discrepantes (outliers).
-- Avalie se os dados apresentam simetria ou tendência.
+ O R é um ambiente de software livre e de código aberto consolidado como uma das ferramentas mais poderosas para a análise estatística e visualização de dados. Criado originalmente por Robert Gentleman e Ross Ihaka, o sistema evoluiu através da colaboração contínua da comunidade científica global. Essa natureza colaborativa resultou em um vasto ecossistema de pacotes, conferindo ao R uma versatilidade que permite desde cálculos matemáticos simples até o desenvolvimento de aplicações web complexas,destacando-se por ser interpretada(ao invés de transformar todo o código em linguagem de máquina antes de rodar, o interpretador lê o código e já executa cada comando diretamente.), possuir escopo léxico(forma como uma linguagem de programação determina onde uma variável pode ser acessada, com base em onde ela foi criada no código.) e ser distribuída sob licença gratuita, o que democratiza o acesso à ciência de dados de alto nível.
 
-Em seguida, discuta os resultados à luz dos conceitos teóricos:
+- O Ambiente RStudio:
 
-- Os resultados estão de acordo com o esperado?
-- Há grande variabilidade? O que isso significa no contexto do experimento?
-- Quais fatores podem ter influenciado os resultados?
-- Existem possíveis fontes de erro experimental?
+ Para otimizar o fluxo de trabalho, utiliza-se o RStudio, a principal IDE (Ambiente de Desenvolvimento Integrado) para a linguagem. Disponível tanto em versões desktop quanto via navegador, o RStudio organiza a escrita, execução e depuração de código em uma interface intuitiva, aumentando a produtividade e acesso a todos.
 
-Procure não apenas descrever, mas **interpretar os dados**.
+- Fundamentos e Lógica da Linguagem:
 
-### 💬 Exemplo de como citar uma referência bibliográfica
+A estrutura do R é regida por três princípios essenciais :
 
-Depois de inserido as informaçõe no arquivo **referencias.bib**, use:
+ 1-Tudo o que existe é um objeto: Qualquer dado ou estrutura armazenada é tratada como  tal.
+ 
+ 2-Tudo o que acontece é uma chamada de função: Operações e cálculos são resultados de funções em execução.
+ 
+ 3-Interfaces são parte do sistema: O R foi projetado para interagir nativamente com outros softwares e linguagens.
 
-- Segundo @Rbasico2022
-- Tudo é um objeto em R [@Rbasico2022]
+- Componentes do Ambiente de Trabalho:
 
-### 📊  Análise de Dados
+O cotidiano de programação no R envolve elementos e arquivos específicos:
 
+1-Console: O coração da execução, onde os comandos são processados e os resultados     exibidos.
+
+2-Prompt (>): O sinal visual que indica que o sistema está pronto para receber         instruções.
+
+3-Ambiente Global (Global Environment): Memória temporária onde residem todos os       objetos criados na sessão.
+
+- Arquivos de Suporte:
+
+ RData: Salva a imagem dos objetos da sessão.
+
+ Rhistory: Mantém o registro histórico dos comandos utilizados.
+
+ Scripts (.R): Documentos de texto onde o código é planejado e preservado.
+
+- Execução e Diretórios:
+
+A interação com o código pode ocorrer diretamente no Console (via tecla Enter) ou através de Scripts (usando o atalho Ctrl + Enter). Além disso, é possível carregar códigos externos com a função source().
+Para a gestão de arquivos, o conceito de Diretório de Trabalho é fundamental:
+getwd(): Identifica a pasta atual de operação.
+setwd(): Define um novo local de busca e salvamento no computador.
+
+- A Natureza dos Objetos: 
+
+Em R, um objeto é uma entidade que organiza informações em duas dimensões: interna (como o dado é alocado na memória) e externa (como ele é apresentado ao usuário). Para entender um objeto, analisamos seus atributos:
+
+ Modo/Tipo: Verificado por mode() ou typeof().
+
+ Comprimento: Verificado por length().
+
+ Classe: Definida por class(), determina como as funções tratarão aquele objeto.
+
+- Classes e Estruturas de Dados:
+
+O R organiza informações em diferentes categorias e formatos, embora nem tudo siga estritamente o paradigma de orientação a objetos.
+
+- Classes Comuns:
+
+numeric: Números reais e inteiros.
+
+logical: Valores booleanos (TRUE/FALSE).
+
+character: Cadeias de texto (strings).
+
+factor: Dados categóricos.
+
+list, matrix, array e data.frame.
+
+- Estruturas Principais:
+
+As informações podem ser agrupadas das seguintes formas:
+
+Vetores Atômicos: A unidade básica (ex: sequências de números ou textos).
+
+Matrizes e Arrays: Estruturas organizadas em dimensões (2D para matrizes, ND para arrays).
+
+Listas: Coleções flexíveis que podem conter diferentes tipos de objetos simultaneamente.
+
+Data Frames: O padrão ouro para ciência de dados; tabelas onde cada coluna pode ter um tipo de dado diferente, facilitando a análise de planilhas complexas.
+
+
+
+### 💬 referência bibliográfica
+
+- Livro R básico @Rbasico2022
+- playlist do youtube curso R básico @vRbasico
+- biblioteca leem @leem
+- lattes @lattes
+
+### 📊  Aplicações dos principios R
+1-Tudo em R é um objeto:
 ```{r}
-distancia <- c(10.2, 9.8, 10.5, 10.1, 9.9, 10.3)
-distancia
+10 + 20
+#comprimento do objeto
+length(10)
+#modo do objeto
+mode(10)
+#tipo do objeto
+typeof(10)
+#verificar se o objeto é um vetor
+is.vector(10)
+```
+Todos os resultados acima comprova que 10 foi considerado um objetos com aquelas caracteristicas.
+
+2-Tudo o que acontece é uma chamada de função:
+```{r}
+is.function(`+`)
+```
+O resultado True,nos traz a certeza que "+" é uma função.
+
+3-Interfaces são parte do sistema:
+```{r}
+`+`
+```
+O resultado .primitive("+") significa uma chamada de função de nome "+" na linguagem C.
+
+### 📊  Aplicações da biblioteca Leem na linguagem R
+Primeiro instalamos a biblioteca Leem utilizando o comando install.packages("leem").
+
+O leem pode ser utilizado para tabular dados brutos de forma automatica.(dados utilizados são hipoteticos):
+```{r}
+# Anexando o pacote leem
+library(leem)
+dados <- c(0,0,0,1,1,1,1,1,1,1,2,2,2,2,3,3,3,3,3,4)
+dados|>
+  new_leem(variable = 2) |>
+  tabfreq()
+```
+
+Pode ser utilizado para calcular as medidas de posições:
+```{r}
+dados |>
+  new_leem(variable = 2) |> # var. quant. continua
+  mpos(grouped = TRUE) # Medidas de posicao
+```
+
+Criação de gráficos:
+```{r}
+dados |>
+  new_leem(variable = 1) |>
+  tabfreq() |>
+  stickchart()
+dados |>
+  new_leem(variable = 1) |>
+  tabfreq() |>
+  barplot()
+dados |>
+  new_leem(variable = 2) |>
+  tabfreq() |>
+  piechart()
+dados |>
+  new_leem(variable = 2) |>
+  tabfreq() |>
+  hist()
 ```
 
 ## 🧠 Considerações finais
 
-Apresente uma síntese dos principais pontos observados no experimento.
-
-- Retome o objetivo da prática e indique se ele foi alcançado.
-- Destaque os principais aprendizados obtidos.
-- Comente brevemente sobre a qualidade dos dados coletados.
-- Sugira possíveis melhorias no procedimento experimental.
-
-Evite repetir apenas os resultados; foque nas **conclusões e reflexões** sobre a prática realizada.
+Compreendemos que o R sendo um ambiente completo no qual a organização dos dados em objetos e a utilização de funções constituem a base para qualquer análise.foi possivel também evidenciando que o domínio da sintaxe básica e dos tipos de dados é fundamental antes de avançar para análises mais complexas.
 
 ## Aprenda Quarto
 
