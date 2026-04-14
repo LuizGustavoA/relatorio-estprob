@@ -1,6 +1,6 @@
 ---
 # Só mude aqui!!!!
-author: "Nome do Aluno"
+author: "Luiz Gustavo Alves Carvalho"
 title: "Relatório de Aula Prática 03"
 bibliography: referencias.bib
 # A partir daqui nao faca alteracoes!!!!!
@@ -28,99 +28,177 @@ execute:
 
 ## 📌 Introdução
 
-Descreva o contexto da prática e sua importância.
-
-> Exemplo: análise da variabilidade em experimentos físicos utilizando uma catapulta.
-
-
+Este relatório apresenta os resultados do lançamento de projéteis com uma catapulta, focando na coleta e análise de dados experimentais. O objetivo principal foi observar onde cada projétil caiu para entender como os resultados variam, mesmo quando tentamos repetir o mesmo movimento.
 
 ## 🎯 Objetivos
 
 ### Objetivo geral
 
-Descrever o objetivo principal da prática.
+O foco deste trabalho é a aplicação das medidas de dispersão. Essas ferramentas nos ajudam a entender o quão proximos estão os resultados ao coeficiente de variação. Se os dados estiverem próximos entre si, a catapulta é precisa; se estiverem muito afastados, o sistema apresenta alta variação. Assim, buscamos medir não apenas a distância alcançada, mas a confiança e a regularidade do equipamento utilizado.
 
 ### Objetivos específicos
 
 - Coletar dados experimentais  
-- Aplicar estatística descritiva  
-- Construir gráficos  
 - Interpretar resultados  
 
 ---
 
 ## 📚  Fundamentação Teórica
 
-Apresente os conceitos principais:
+ conceitos principais:
+ 
+- Amplitude
 
-- Média
-- Variância
+Indica a distância total entre o tiro mais curto e o tiro mais longo.
+
+$$
+A = x_{\max} - x_{\min}
+$$
+
+- Variância Amostral
+
+A variância mede o "erro" médio quadrático em relação à média. Ela mostra o quão longe os dados estão do centro, mas o resultado fica em unidades ao quadrado.
+
+$$
+\text{Variância Amostral}=s^2 = \frac{1}{n-1}\sum_{i=1}^{n}(x_i - \bar{x})^2
+$$
+
 - Desvio padrão
-- Amostragem
+
+É a medida mais usada porque está na mesma unidade dos seus dados (ex: metros). Ele diz, em média, quanto os tiros se afastaram da média para mais ou para menos.
 
 $$
-\bar{x} = \frac{1}{n}\sum_{i=1}^{n} x_i
+\text{Desvio padrão}= s = \sqrt{\frac{1}{n-1}\sum_{i=1}^{n}(x_i - \bar{x})^2}
 $$
+
+- Coeficiente de Variação
+
+Serve para dizer, em porcentagem, o quanto a sua catapulta é instável.
+
+$$
+CV = \frac{s}{\bar{x}} \times 100\%
+$$
+
+- Erro padrão da Média
+
+Diferente do desvio padrão , o Erro Padrão mede a incerteza da sua média.
+
+$$
+EPM = \frac{s}{\sqrt{n}}
+$$
+
+usado como referencia para criação das formulas no codigo @latex
+usado como referencia para conhecimento das formulas @estatistica2024
 
 ---
 
 ## ⚙️ Metodologia
 
-::: {.callout-note}
-Descreva como o experimento foi realizado.
-:::
-
-- Materiais utilizados  
-- Procedimento  
-- Número de repetições  
-
+A coleta de dados consistiu na execução de lançamentos experimentais com uma catapulta para fins de análise estatística de dispersão. O procedimento foi realizado de forma padronizada pelos acadêmicos de Engenharia Mecatrônica, com a divisão de tarefas organizada para minimizar erros operacionais: Maria Eduarda e Marcos atuaram na execução dos lançamentos, garantindo a constância do ângulo e da força de disparo; Igor e Lucas foram responsáveis pela medição física das distâncias alcançadas utilizando uma trena; e Wadmilson realizou a coleta e o registro sistemático dos dados.
+ 
+ DADOS COLETADOS:
+2,5 + 96;
+2,5 + 89;
+2,5 + 89;
+2,5 + 85;
+2,5 + 43,5;
+2,5 + 118,5;
+2,5 + 115;
+2,5 + 91;
+2,5 + 79;
+2,5 + 89;
+2,5 + 73;
+2,5 + 85;
+2,5 + 119;
+2,5 + 97,5;
+2,5 + 102;
+2,5 + 90;
+2,5 + 88;
+2,5 + 100;
+2,5 + 91;
+2,5 + 86,5;
+2,5 + 70;
+2,5 + 91;
+2,5 + 80;
+2,5 + 78;
+2,5 + 86,5;
+2,5 + 68;
+2,5 + 25;
+2,5 + 79;
+2,5 + 107;
+2,5 + 67;
+2,5 + 52,5;
+2,5 + 81;
+2,5 + 109;
+2,5 + 83;
+2,5 + 74;
+2,5 + 89;
+2,5 + 82,5;
+2,5 + 81;
+2,5 + 70;
+2,5 + 90;
+2,5 + 88;
+2,5 + 100;
+2,5 + 91;
+2,5 + 86,5;
+2,5 + 70;
+2,5 + 91;
+2,5 + 80;
+2,5 + 78;
+2,5 + 86,5;
+2,5 + 68;
+2,5 + 25;
+2,5 + 79;
+2,5 + 107;
+2,5 + 67;
+2,5 + 52,5;
+2,5 + 81;
+2,5 + 109;
+2,5 + 83;
+2,5 + 74;
+2,5 + 89;
+2,5 + 82,5;
+2,5 + 81;
+2,5 + 70;
 ---
 
 ## 🔍 Resultados e Discussão
 
-Apresente e interprete os resultados obtidos a partir dos dados coletados.
-
-- Descreva os principais resultados numéricos (média, variabilidade, etc.).
-- Comente o comportamento dos dados observados nos gráficos.
-- Indique se há presença de valores discrepantes (outliers).
-- Avalie se os dados apresentam simetria ou tendência.
-
-Em seguida, discuta os resultados à luz dos conceitos teóricos:
-
-- Os resultados estão de acordo com o esperado?
-- Há grande variabilidade? O que isso significa no contexto do experimento?
-- Quais fatores podem ter influenciado os resultados?
-- Existem possíveis fontes de erro experimental?
-
-Procure não apenas descrever, mas **interpretar os dados**.
-
-### 💬 Exemplo de como citar uma referência bibliográfica
-
-Depois de inserido as informaçõe no arquivo **referencias.bib**, use:
-
-- Segundo @Rbasico2022
-- Tudo é um objeto em R [@Rbasico2022]
+Os dados obtidos após os 40 lançamentos, ajustados com a constante de 2,5 unidades, revelaram uma média de alcance de 88,41. A Amplitude (94,00) e o Desvio Padrão (19,91) demonstram uma dispersão considerável, indicando que o sistema mecânico da catapulta sofreu variações significativas durante a execução. O Coeficiente de Variação de 22,52% classifica a precisão do experimento como moderada/baixa, o que pode ser atribuído a fatores como a fadiga dos componentes elásticos ou pequenas oscilações humanas no momento do gatilho por Maria Eduarda e Marcos. No entanto, o Erro Padrão da Média (3,19) sugere que a amostra foi numericamente suficiente para garantir que a média calculada seja uma representação confiável do comportamento, permitindo concluir que, apesar da variabilidade observada por Igor, Lucas e Wadmilson, os resultados oferecem uma base sólida para o estudo das medidas de dispersão.
 
 ### 📊  Análise de Dados
-
+ codigo para definir os dados como variavel
 ```{r}
-distancia <- c(10.2, 9.8, 10.5, 10.1, 9.9, 10.3)
-distancia
+medidas <- c(96, 89, 89, 85, 43.5, 118.5, 115, 91, 79, 89, 73, 85, 119, 97.5, 102, 90, 88, 100, 91, 86.5, 70, 91, 80, 78, 86.5, 68, 25, 79, 107, 67, 52.5, 81, 109, 83, 74, 89, 82.5, 81, 70)
+dados <- 2.5 + medidas
 ```
+ Amplitude
+```{r}
+diff(range(dados))
+```
+ Variância Amostral
+```{r}
+var(dados)
+```
+ Desvio Padrão
+```{r}
+sd(dados)
+```
+ Erro Padrão da Média
+```{r}
+sd(dados) / sqrt(length(dados))
+```
+ 
+ Coeficiente de Variação
+```{r}
+(sd(dados) / mean(dados)) * 100
+```
+
+usado como referencia para a criacão do codigo o livro @Rbasico2022
 
 ## 🧠 Considerações finais
 
-Apresente uma síntese dos principais pontos observados no experimento.
+O experimento de lançamento com a catapulta permitiu aplicar, de forma prática, os conceitos de estatística fundamentais para a formação em Engenharia Mecatrônica. A análise das medidas de dispersão revelou que, a variabilidade dos dados (CV de 22,52%) evidencia a influência de erros aleatórios pelo  processo manual. Conclui-se que na divisão de tarefas entre os membros, desde a execução por Maria Eduarda e Marcos, passando pela medição de Igor e Lucas, até o registro de Wadmilson — foi essencial para a integridade da amostra. O uso do RStudio como ferramenta de suporte demonstrou ser eficaz para o tratamento de dados.
 
-- Retome o objetivo da prática e indique se ele foi alcançado.
-- Destaque os principais aprendizados obtidos.
-- Comente brevemente sobre a qualidade dos dados coletados.
-- Sugira possíveis melhorias no procedimento experimental.
-
-Evite repetir apenas os resultados; foque nas **conclusões e reflexões** sobre a prática realizada.
-
-## Aprenda Quarto
-
-Acesse [Quarto](https://quarto.org/).
 
 ## 📖 Referências
