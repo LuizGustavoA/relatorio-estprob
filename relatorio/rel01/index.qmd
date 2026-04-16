@@ -40,7 +40,6 @@ O experimento teve como objetivo aplicar variações no lançamento de projétei
 ### Objetivos específicos
 
 - Coletar dados experimentais  
-- Aplicar estatística descritiva  
 - Construir gráficos  
 - Interpretar resultados  
 
@@ -52,76 +51,114 @@ Conceitos principais de estatística:
 
 - Média Aritmética
 $$
-\text{média}= \bar{x} = \frac{1}{n}\sum_{i=1}^{n} x_i
+\begin{matrix}
+\bar{x} = \frac{1}{n}\sum_{i=1}^{n} x_i \\[10pt]
+\bar{x}: \text{Símbolo da média da amostra} \\
+n: \text{Tamanho da amostra} \\
+x_i: \text{Valor de cada dado}
+\end{matrix}
 $$
-Soma de cada dado = 6351,3    
-Número total de dados=22   
-Resultado=6351,3÷22 ≈ 288,69    
+
 
 - Variância Amostral
 $$
-\text{Variância Amostral}=s^2 = \frac{1}{n-1}\sum_{i=1}^{n}(x_i - \bar{x})^2
+\begin{matrix}
+s^2 = \frac{1}{n-1}\sum_{i=1}^{n}(x_i - \bar{x})^2 \\[10pt]
+s^2: \text{Variância da amostra} \\
+n-1: \text{Graus de liberdade} \\
+(x_i - \bar{x}): \text{Desvio em relação à média}
+\end{matrix}
 $$
-Subtrai-se a média de cada valor e eleva-se o resultado ao quadrado; em seguida, somam-se todos os termos, obtendo-se aproximadamente 1269,87. Dividindo esse valor por 𝑛−1, temos: variância = 1269,87 ÷ 21 ≈ 60,47.
-
 
 - Desvio padrão
 $$
-\text{Desvio padrão}= s = \sqrt{\frac{1}{n-1}\sum_{i=1}^{n}(x_i - \bar{x})^2}
+\begin{matrix}
+s = \sqrt{\frac{1}{n-1}\sum_{i=1}^{n}(x_i - \bar{x})^2} \\[10pt]
+s: \text{Desvio padrão da amostra} \\
+\text{Indica a dispersão dos dados em relação à média}
+\end{matrix}
 $$
-Para calcular o desvio padrão, tira-se a raiz quadrada da variância amostral: s = √60,47 ≈ 7,77
 
 - Mediana
 $$
-\text{Mediana} = 
-\begin{cases}
-x_{\frac{n+1}{2}}, & \text{se } n \text{ ímpar} \\
-\frac{x_{\frac{n}{2}} + x_{\frac{n}{2}+1}}{2}, & \text{se } n \text{ par}
-\end{cases}
+\begin{matrix}
+\text{Mediana} = \begin{cases} x_{\frac{n+1}{2}}, & \text{se } n \text{ ímpar} \\ \frac{x_{\frac{n}{2}} + x_{\frac{n}{2}+1}}{2}, & \text{se } n \text{ par} \end{cases} \\[10pt]
+n: \text{Número total de elementos} \\
+x: \text{Posição do valor no conjunto ordenado}
+\end{matrix}
 $$
-Primeiro, ordenam-se os dados em ordem crescente. Como n=22, selecionam-se o 11º e o 12º valores, somam-se ambos e divide-se o resultado por 2: Mediana = (285,3 + 287,1) ÷ 2 = 286,2.
 
 - moda
 $$
-\text{Moda} = x_k \; \text{tal que} \; f(x_k) = \max(f(x_i))
+\begin{matrix}
+\text{Moda} = x_k \text{ tal que } f(x_k) = \max(f(x_i)) \\[10pt]
+f(x_k): \text{Frequência do valor } x_k \\
+\max: \text{Valor que ocorre mais vezes}
+\end{matrix}
 $$
-São os valores que mais se repetem no conjunto de dados: Moda = 277,1 e 285,3.
 
 - Amplitude
 $$
-A = x_{\max} - x_{\min}
+\begin{matrix}
+A = x_{\max} - x_{\min} \\[10pt]
+x_{\max}: \text{Valor máximo do conjunto} \\
+x_{\min}: \text{Valor mínimo do conjunto}
+\end{matrix}
 $$
-Utilizando o desvio padrão dividido pela raiz do número de dados, obtém-se o erro padrão da média (EPM), aproximadamente igual a 2,29.
 
 - Coeficiente de Variação
 $$
-CV = \frac{s}{\bar{x}} \times 100\%
+\begin{matrix}
+CV = \frac{s}{\bar{x}} \times 100\% \\[10pt]
+s: \text{Desvio padrão} \\
+\bar{x}: \text{Média aritmética} \\
+100\%: \text{Expressa o resultado em porcentagem}
+\end{matrix}
 $$
-Utilizando o desvio padrão dividido pela média e, em seguida, multiplicando o resultado por 100, obtém-se o coeficiente de variação (CV), aproximadamente igual a 3,69%.
 
 - Erro padrão da Média
 $$
-EPM = \frac{s}{\sqrt{n}}
+\begin{matrix}
+EPM = \frac{s}{\sqrt{n}} \\[10pt]
+s: \text{Desvio padrão da amostra} \\
+\sqrt{n}: \text{Raiz quadrada do tamanho da amostra}
+\end{matrix}
 $$
-Utilizando o desvio padrão dividido pela raiz do número de dados, obtém-se o erro padrão da média (EPM), aproximadamente igual a 2,29.
 
 Conceitos principais Elasticidade:
 
 - Lei de Hooke
 $$
-F = kx
+\begin{matrix}
+F = kx \\[10pt]
+F: \text{Força aplicada pelo elástico} \\
+k: \text{Constante elástica (rigidez)} \\
+x: \text{Deformação ou distensão do elástico}
+\end{matrix}
 $$
 Permite calcular a força aplicada ao projétil no momento do lançamento. Quanto maior a força, maior será a aceleração e, consequentemente, o alcance.
 
 - Degradação da constante elástica
 $$
-k(n) = k_0 \cdot e^{-\alpha n}
+\begin{matrix}
+k(n) = k_0 \cdot e^{-\alpha n} \\[10pt]
+k(n): \text{Constante elástica após } n \text{ lançamentos} \\
+k_0: \text{Constante elástica inicial} \\
+\alpha: \text{Coeficiente de fadiga do material} \\
+n: \text{Número de repetições (lançamentos)}
+\end{matrix}
 $$
 Explica por que os lançamentos ficam mais fracos ao longo do tempo, mesmo usando a mesma deformação. É essencial para entender erros e variações nos resultados.
 
+
 - Energia potencial elástica
 $$
-E = \frac{1}{2} k x^2
+\begin{matrix}
+E = \frac{1}{2} k x^2 \\[10pt]
+E: \text{Energia acumulada no elástico} \\
+k: \text{Constante elástica} \\
+x: \text{Distância da deformação}
+\end{matrix}
 $$
 Essa energia é convertida em movimento do projétil. Quanto maior a energia, maior tende a ser a velocidade inicial e o alcance da catapulta.
 
@@ -129,12 +166,19 @@ Conceitos Principais Termodinamica:
 
 - Relação temperatura e constante elástica
 $$
-k(T) = k_0 \cdot (1 - \beta \Delta T)
+\begin{matrix}
+k(T) = k_0 \cdot (1 - \beta \Delta T) \\[10pt]
+k(T): \text{Constante elástica na temperatura atual} \\
+\beta: \text{Coeficiente de sensibilidade térmica} \\
+\Delta T: \text{Variação de temperatura} \\
+\text{Explica a variação da força conforme o clima do laboratório}
+\end{matrix}
 $$
 elástico é um material sensível ao calor,por isso é melhor levar em consideração que a constante elástica varia com a temperatura.
 Temperaturas mais altas → elástico mais “mole” → menor k → menor força → menor alcance
 Temperaturas mais baixas → elástico mais rígido → maior k → maior força (até certo limite)
 
+- Para a elaboração das fórmulas matemáticas, foi utilizada uma playlist do youtube @latex
 
 ---
 
@@ -160,31 +204,44 @@ Tensão do elástico, mas com menor energia potencial elástica: ela influencia 
 
 ## 🔍 Resultados e Discussão
 
- A análise dos dados mostra que a média (≈ 288,69) e a mediana (= 286,2) estão muito próximas, indicando que os resultados são bem distribuídos e não sofrem grande influência de valores extremos. Além disso, a presença de duas modas (277,1 e 285,3) indica que alguns valores se repetiram com mais frequência, provavelmente devido à repetição de condições semelhantes nos lançamentos da catapulta.
+DADOS COLETADOS:
+1-326;
+2-294,8;
+3-296,8;
+4-294;
+5-295,8;
+6-298,5;
+7-300,6;
+8-285,1;
+9-287,1;
+10-292,3;
+11-290,8;
+12-287,9;
+13-282,9;
+14-285,3;
+15-281,5;
+16-278,4;
+17-276,4;
+18-281,7;
+19-277,1;
+20-285,3;
+21-277,1;
+22-281,8.
 
- O desvio padrão (≈ 7,77), considerado baixo em relação à média, demonstra que há pouca dispersão nos dados, o que evidencia a consistência dos resultados ao longo das medições. Mesmo assim, existem alguns valores fora do padrão, como o lançamento 17 (276,4 cm) e o primeiro lançamento (326,0 cm), que se destacam dos demais.
+Analise desse dados nós mostra que a média (≈ 288,69) e a mediana (= 286,2) estão muito próximas, indicando que os resultados são bem distribuídos e não sofrem grande influência de valores extremos. Além disso, a presença de duas modas (277,1 e 285,3) indica que alguns valores se repetiram com mais frequência, provavelmente devido à repetição de condições semelhantes nos lançamentos da catapulta.
+
+ O desvio padrão (≈ 7,77), considerado baixo em relação ao coeficiente de variação (≈ 3,69%), demonstra que há pouca dispersão nos dados, o que evidencia a consistência dos resultados ao longo das medições. Mesmo assim, existem alguns valores fora do padrão, como o lançamento 17 (276,4 cm) e o primeiro lançamento (326,0 cm), que se destacam dos demais.
 
  Em experimentos de lançamento de projéteis, é esperado haver variações por causa de fatores mecânicos e ambientais. Ainda assim, os resultados mostram boa repetibilidade, já que a maior parte das medidas se concentra próxima da média. Isso também é reforçado pelo coeficiente de variação (≈ 3,69%), que indica baixa variabilidade no conjunto de dados.
  
  As pequenas variações observadas podem ser explicadas por fatores como mudanças na tensão da catapulta, atrito ou desgaste do mecanismo, pequenas diferenças na posição do projétil e irregularidades na superfície de apoio, como uma mesa levemente desnivelada. Além disso, erros experimentais também podem ter influenciado os resultados, como imprecisões nas medições com régua ou fita métrica, arredondamentos na leitura das distâncias, variações na forma de acionar a catapulta, possível instabilidade do equipamento e até a influência da força elástica e da temperatura.
-
-### 💬 Referência bibliográfica
-
-- Foi utilizada a biblioteca leem no R para criação dos gráficos @leem
-- Para a elaboração das fórmulas matemáticas, foi utilizada uma playlist do youtube @latex
+ 
 - A análise estatística foi baseada em @estatistica2024
-- O desenvolvimento deste projeto foi baseado no livro @Rbasico2022
-
 
 ### 📊  Análise de Dados
 
 ```{r}
 library(leem)
-dados <- read.csv2("ap01.csv", skip = 1)
-dist<- as.numeric(dados[[2]])
-dist|>
-  new_leem(variable = 2)|>
-  tabfreq()
 dados1<- read.csv2("ap01.csv", skip = 1)
 dist1<- c(dados1[[2]])
 dist1 |>
@@ -195,6 +252,9 @@ dist1 |>
     lcol = c("black", "blue", "brown"),
     ptext = 0.08, larrow = 0.4) 
 ```
+Os resultados apresentam uma distribuição com assimetria positiva, visto que moda<mediana<media. Essa característica indica uma concentração de lançamentos em distâncias menores, com a presença de valores mais elevados que deslocaram a média aritmética para a direita do centro da distribuição."
+
+- Foi utilizada a biblioteca leem no R para criação dos gráficos @leem
 
 ## 🧠 Considerações finais
 
@@ -206,9 +266,6 @@ dist1 |>
 
  Como melhorias, seria interessante utilizar instrumentos de medição mais precisos, aprimorar o controle das condições de lançamento (como força aplicada) e garantir uma superfície totalmente nivelada. Além disso, automatizar o disparo da catapulta poderia reduzir interferências humanas, aumentando a precisão e a repetibilidade dos resultados.
 
-
-## Aprenda Quarto
-
-Acesse [Quarto](https://quarto.org/).
+- O desenvolvimento deste projeto foi baseado no livro @Rbasico2022
 
 ## 📖 Referências
