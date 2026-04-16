@@ -49,25 +49,24 @@ Entender a historia de como surgiu a ideia da linguagem R, as utilidades prátic
 
 ## 📚  Fundamentação Teórica
 
-- Algoritmos usados como exemplos no livro Epaec
-- historia baseada no livro R básico
-- algumas informações da apresentação do principio:Tudo é objeto em R, baseadas nas videos aulas da playlist R básico
-
+- Algoritmos usados como exemplos no livro Epaec- Livro R básico @Rbasico2022
+- historia baseada no livro @Rbasico2022
+- algumas informações da apresentação do principio:Tudo é objeto em R, baseadas nas videos aulas da playlist @vRbasico
 
 ---
 
 ## ⚙️ Metodologia
 
- Para estudo foi utilizado aulas presencias do professor de estatistica e probabilidade,Ben Dêivide, ministradas para o curso de engenharia mecâtronica na universidade federal de sao joao del rei(ufsj), o livro R básico(colocar referencia), e videos aulas de numero 00 até 08 da playlist R básico 2024(colocar referencia).
+ Para estudo foi utilizado aulas presencias do professor de estatistica e probabilidade,Ben Dêivide (@lattes) , ministradas para o curso de engenharia mecâtronica na universidade federal de sao joao del rei(ufsj), o livro R básico(@Rbasico2022), e videos aulas de numero 00 até 08 da playlist R básico 2024(@vRbasico).
  
  
 ---
 
 ## 🔍 Resultados e Discussão
 
-- Introdução ao Ecossistema R:
+- Introdução a programação em R:
 
- O R é um ambiente de software livre e de código aberto consolidado como uma das ferramentas mais poderosas para a análise estatística e visualização de dados. Criado originalmente por Robert Gentleman e Ross Ihaka, o sistema evoluiu através da colaboração contínua da comunidade científica global. Essa natureza colaborativa resultou em um vasto ecossistema de pacotes, conferindo ao R uma versatilidade que permite desde cálculos matemáticos simples até o desenvolvimento de aplicações web complexas,destacando-se por ser interpretada(ao invés de transformar todo o código em linguagem de máquina antes de rodar, o interpretador lê o código e já executa cada comando diretamente.), possuir escopo léxico(forma como uma linguagem de programação determina onde uma variável pode ser acessada, com base em onde ela foi criada no código.) e ser distribuída sob licença gratuita, o que democratiza o acesso à ciência de dados de alto nível.
+ O R é um ambiente de software livre e de código aberto consolidado como uma das ferramentas mais poderosas para a análise estatística e visualização de dados. Criado originalmente por Robert Gentleman e Ross Ihaka, o sistema evoluiu através da colaboração contínua da comunidade científica global. Essa natureza colaborativa resultou em um vasto ecossistema de pacotes, conferindo ao R uma versatilidade que permite desde cálculos matemáticos simples até o desenvolvimento de aplicações web complexas,destacando-se por ser interpretada(ao invés de transformar todo o código em linguagem de máquina antes de rodar, o interpretador lê o código e já executa cada comando diretamente.), possuir escopo léxico(forma como uma linguagem de programação determina onde uma variável pode ser acessada, com base em onde ela foi criada no código. e ser distribuída sob licença gratuita, o que democratiza o acesso à ciência de dados de alto nível.
 
 - O Ambiente RStudio:
 
@@ -77,9 +76,9 @@ Entender a historia de como surgiu a ideia da linguagem R, as utilidades prátic
 
 A estrutura do R é regida por três princípios essenciais :
 
- 1-Tudo o que existe é um objeto: Qualquer dado ou estrutura armazenada é tratada como  tal.
+ 1-Tudo o que existe é um objeto: No R, até os elementos mais básicos são objetos. Um número não é apenas um valor bruto, x é um objeto da classe numeric. Até mesmo o código que você escreve é um objeto (do tipo language), o que permite que o R analise e modifique seu próprio código antes de executá-lo.
  
- 2-Tudo o que acontece é uma chamada de função: Operações e cálculos são resultados de funções em execução.
+ 2-Tudo o que acontece é uma chamada de função: Operações e cálculos são resultados de funções em execução,por exemplo, o operador de soma + é uma função. Quando você faz 2 + 2, o R está executando a função `+`(2, 2).
  
  3-Interfaces são parte do sistema: O R foi projetado para interagir nativamente com outros softwares e linguagens.
 
@@ -146,16 +145,8 @@ Listas: Coleções flexíveis que podem conter diferentes tipos de objetos simul
 
 Data Frames: O padrão ouro para ciência de dados; tabelas onde cada coluna pode ter um tipo de dado diferente, facilitando a análise de planilhas complexas.
 
-
-
-### 💬 referência bibliográfica
-
-- Livro R básico @Rbasico2022
-- playlist do youtube curso R básico @vRbasico
-- biblioteca leem @leem
-- lattes @lattes
-
 ### 📊  Aplicações dos principios R
+
 1-Tudo em R é um objeto:
 ```{r}
 10 + 20
@@ -168,66 +159,111 @@ typeof(10)
 #verificar se o objeto é um vetor
 is.vector(10)
 ```
-Todos os resultados acima comprova que 10 foi considerado um objetos com aquelas caracteristicas.
+Todos os resultados com as caracteristicas acima comprova que 10 foi considerado um objetos.
 
 2-Tudo o que acontece é uma chamada de função:
 ```{r}
 is.function(`+`)
 ```
-O resultado True,nos traz a certeza que "+" é uma função.
+O comando is.function nos trás a resposta se o argumento colocado é uma função ou não,o resultado true da a certeza que "+" é uma função.
 
 3-Interfaces são parte do sistema:
 ```{r}
 `+`
 ```
-O resultado .primitive("+") significa uma chamada de função de nome "+" na linguagem C.
+O resultado .primitive("+") significa uma chamada de função de nome "+" na linguagem C.Que nos mostra que o R é formado por mais de uma linguagem sendo uma delas o C
+
+### 📊  Aplicações da linguagem R
+```{r}
+dados <- c(0,0,0,1,1,1,1,1,1,1,2,2,2,2,3,3,3,3,3,4)
+```
+primeiro atribuimos os dados que temos no objeto dados com <- e como é um conjunto de numeros colocamos c() para o R tratar como vetor. 
+```{r}
+media_valor <- mean(dados)
+print(media_valor) # Resultado: 1.7
+```
+
+A função mean() faz o calculo para nos do valor medio ou media, dos dados que temos,a função print() usamos para mostrar o valor 
+
+```{r}
+frequencia   <- table(dados)
+print(frequencia)  # Mostra a contagem de cada número
+```
+
+A função table() faz o calculo para nos do valor da frequuencia dos dados,a função print() usamos para mostrar os valores.Sendo os de cima os dados e os numeros em baixo quantas vezes se repetem. 
+
+```{r}
+median(dados)
+```
+A partir daqui para os proximos codigos não coloquei print(),para você entender que não precisa para a linguagem R,quando a função ja retorna um valor, a função median() retorna o valor da mediana.
+
+```{r}
+sd(dados)
+```
+A função sd() retorna o valor do Desvio padrão.
+
+```{r}
+var(dados)
+```
+A função var() retorna o valor da Variância.
+
+```{r}
+length(dados)
+```
+A função length() retorna a quantidade de elementos dentro do conjunto/vetor.
+
+```{r}
+hist(dados, col="skyblue", main="Histograma", xlab="Valores")
+```
+
+Esse é um exemplo de vários graficos que o R consegue fazer.
 
 ### 📊  Aplicações da biblioteca Leem na linguagem R
-Primeiro instalamos a biblioteca Leem utilizando o comando install.packages("leem").
-
-O leem pode ser utilizado para tabular dados brutos de forma automatica.(dados utilizados são hipoteticos):
+ O leem é uma ferramenta que podemos usar no R que simplifica diversas funções,como a criação de gráficos com marcações de média,moda e mediana,criação de tabelas de frequencia.
+Para começar a utilizar o leem instalamos a biblioteca Leem utilizando o comando install.packages("leem").
+(dados utilizados são hipoteticos):
 ```{r}
 # Anexando o pacote leem
 library(leem)
+```
+
+Para a utilização da biblioteca anexos ela sempre no começo do codigo,usando library(leem)
+
+```{r}
 dados <- c(0,0,0,1,1,1,1,1,1,1,2,2,2,2,3,3,3,3,3,4)
-dados|>
-  new_leem(variable = 2) |>
-  tabfreq()
 ```
 
-Pode ser utilizado para calcular as medidas de posições:
+Como ainda continua sendo linguagem definimos um objeto com os dados que temos da mesma forma que fizemos anteriormente
+
 ```{r}
-dados |>
-  new_leem(variable = 2) |> # var. quant. continua
-  mpos(grouped = TRUE) # Medidas de posicao
+  dados <- c(0,0,0,1,1,1,1,1,1,1,2,2,2,2,3,3,3,3,3,4)
+  dados <- new_leem(dados,variable = 2) 
+  tabfreq(dados)
 ```
 
-Criação de gráficos:
+Aqui criamos uma tabela de frequencia usando a função tabfreq(),mas definimos o objeto dados como continuous na função  new_leem(dados,variable = 2), o '2' define como continuous podemos tambem escrever continuous ao inves de '2'.
+
 ```{r}
-dados |>
-  new_leem(variable = 1) |>
-  tabfreq() |>
-  stickchart()
-dados |>
-  new_leem(variable = 1) |>
-  tabfreq() |>
-  barplot()
-dados |>
-  new_leem(variable = 2) |>
-  tabfreq() |>
-  piechart()
-dados |>
-  new_leem(variable = 2) |>
-  tabfreq() |>
-  hist()
+  dados <- c(0,0,0,1,1,1,1,1,1,1,2,2,2,2,3,3,3,3,3,4)
+  dados <- new_leem(dados,variable = 2) 
+  mpos(dados,grouped = TRUE) # Medidas de posicao
 ```
+
+Pode ser utilizado para calcular as medidas de posições com a função mpos()
+
+
+```{r}
+  dados <- c(0,0,0,1,1,1,1,1,1,1,2,2,2,2,3,3,3,3,3,4)
+  dados <- new_leem(dados,variable = 1) 
+  barplot(dados)
+```
+
+O leem também pode ser usado para a criação de graficos simples e complexos, um exemplo é o gráfico e barras usando o comando  barplot().
+
+- biblioteca leem @leem
 
 ## 🧠 Considerações finais
 
 Compreendemos que o R sendo um ambiente completo no qual a organização dos dados em objetos e a utilização de funções constituem a base para qualquer análise.foi possivel também evidenciando que o domínio da sintaxe básica e dos tipos de dados é fundamental antes de avançar para análises mais complexas.
-
-## Aprenda Quarto
-
-Acesse [Quarto](https://quarto.org/).
 
 ## 📖 Referências
